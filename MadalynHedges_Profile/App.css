@@ -1,0 +1,9 @@
+
+.resume-container {
+   
+    transition: opacity 1.5s ease-in-out; 
+}
+
+.fade-out {
+    opacity: 0;
+}
