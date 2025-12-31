@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madalyn Hedges - Professional Resume</title>
+    <style>
+
+
+
+.contact-carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    height: 30px; 
+}
+
+.contact-display {
+    overflow: hidden; 
+    width: 60%; 
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    
+}
+
+.contact-item {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.carousel-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: #0056b3;
+}
+
+
+
+
+
+.resume-container {
+  
+    transition: opacity 1.5s ease-in-out; /* Fade over 1.5 seconds */
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-image: url(https://i.makeagif.com/media/3-22-2023/fc5RGu.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+
+            display: flex;
+            justify-content: center;
+        }
+        .resume-container {
+            width: 90%;
+            max-width: 1000px; 
+            background-color: rgb(161, 218, 180);
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .profile-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 4px solid #007bff; 
+            margin-bottom: 20px;
+        }
+        .profile-header h1 {
+            margin: 0 0 5px 0;
+            color: #333;
+            font-size: 3em;
+        }
+        .profile-header h2 {
+            margin: 0 0 15px 0;
+            color: #555;
+            font-size: 1.4em;
+            font-weight: normal;
+        }
+        .contact-info a, .contact-info span {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+      
+        .content-body {
+            display: flex; 
+            gap: 30px; 
+        }
+
+        .main-column {
+            flex: 2; 
+            min-width: 60%;
+        }
+
+        .sidebar-column {
+            flex: 1; 
+            min-width: 30%;
+            padding-top: 10px; 
+        }
+        
+
+        .section {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+        .section h2 {
+            color: #007bff;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.6em;
+            text-transform: uppercase;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #ccc;
+        }
+        .experience-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .experience-item .years {
+            font-style: italic;
+            color: #777;
+            margin: 5px 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-tag {
+            background-color: #e0f7fa;
+            color: #00838f;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+       
+        @media (max-width: 768px) {
+            .content-body {
+                flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+
+
+    
+<div class="resume-container fade-out" id="resumePage">    <header class="profile-header">
+        <h1>Madalyn Hedges</h1>
+        <h2>Front-End  Developer</h2>
+       <div class="contact-carousel-container">
+        <button class="carousel-btn" id="prevBtn">
+            &lt;
+        </button>
+        
+        <div class="contact-display" id="contactDisplay">
+            <div class="contact-item"> <a href="mailto:john.doe@email.com">madalynhedges@gmail.com</a></div>
+            <div class="contact-item"> (214) 766-0010</div>
+            <div class="contact-item"><a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn Profile</a></div>
+            <div class="contact-item"><a href="https://github.com/MxH0010" target="_blank">My GitHub</a></div>
+        </div>
+
+        <button class="carousel-btn" id="nextBtn">
+            &gt;
+        </button>
+    </div>
+    </header>
+
+    <div class="content-body">
+        
+        <div class="main-column">
+            
+            <section class="section summary">
+                <h2>Professional Summary</h2>
+                <p>Aspiring front-end looking to work with a team and deliver projects and useful applications to clients. Known for strong cooperation skills and a client-centered approach. Committed to promoting an easy workflow environment and using communication skills through working with clients and teammates..</p>
+            </section>
+            
+            <section class="section experience">
+                <h2>Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <h3>DAEP Teacher at Cleburne ISD </h3>
+                    <p class="years">2023 - Present</p>
+                    <p>Implemented best practices for students to perform at their level based on knowledge and skills. Provide data feedback to principals and district department heads to convey accurate performance. </p>
+                </div>
+                
+               
+                
+            </section>
+
+        </div>
+        
+        <div class="sidebar-column">
+
+            <section class="section skills">
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </section>
+
+            <section class="section education">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <h3>B.A. in Biology</h3>
+                    <p>University of Texas at Arlington | 2015 - 2019</p>
+                    <h4> Quickstart Education Program</h4>
+                    <p> Software Engineering | 2025</p>
+                </div>
+                
+            </section>
+
+        </div>
+    </div>
+    
+</div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          
+            const resumeContainer = document.getElementById('resumePage');
+            
+     
+            if (resumeContainer && resumeContainer.classList.contains('fade-out')) {
+                
+                setTimeout(() => {
+                    resumeContainer.classList.remove('fade-out');
+                }, 50); 
+            }
+        });        
+    </script>
+
+
+<script>
+        let currentContactIndex = 0;
+        let contactItems = [];
+
+       
+        function showContact(index) {
+            // Hide all items first
+            contactItems.forEach(item => {
+                item.style.display = 'none';
+            });
+            if (contactItems[index]) {
+                contactItems[index].style.display = 'flex'; 
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            
+            const resumeContainer = document.getElementById('resumePage');
+            if (resumeContainer && resumeContainer.classList.contains('fade-out')) {
+                // Remove the 'fade-out' class after a short delay to start the CSS transition
+                setTimeout(() => {
+                    resumeContainer.classList.remove('fade-out');
+                }, 50); 
+            }
+            
+            contactItems = document.querySelectorAll('.contact-item');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            showContact(currentContactIndex); 
+
+            prevBtn.addEventListener('click', () => {
+                currentContactIndex = (currentContactIndex - 1 + contactItems.length) % contactItems.length;
+                showContact(currentContactIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentContactIndex = (currentContactIndex + 1) % contactItems.length;
+                showContact(currentContactIndex);
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+</body>
+</html>
